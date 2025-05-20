@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET AND POST API PRACTICE:</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            height: 100vh;
+            width: 100vw;
+            font-family: "gilroy";
+            color: white;
+            background-color: black;
+        }
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 60px;
+            text-decoration: underline;
+        }
+        form{
+            height: 30%;
+            width: 25%;
+            background-color: green;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 5%;
+            margin-left: 37.5%;
+        }
+        input{
+            width: 70%;
+            border-radius: 10px;
+            padding: 2px;
+            margin-top: 3%;
+        }
+        button{
+            margin-left: 30%;
+            margin-top: 5%;
+            border-radius: 10px;
+            cursor: pointer;
+            width: 30%;
+            font-size: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>THIS IS THE PRACTICE OF GET AND POST REQUEST!</h1>
+    <form method="get" action="http://localhost:5000/register">
+       NAME: <input type="text" placeholder="please enter name:"><br>
+       AGE: <input type="number"  placeholder="enter age:"><br>
+       PASSWORD: <input type="password" placeholder="enter password:"><br>
+       EMAIL: <input type="email" placeholder="enter email:"><br>
+        <button>SUBMIT</button>
+    </form>
+     <form method="post" action="http://localhost:5000/register">
+       NAME: <input type="text" placeholder="please enter name:"><br>
+       AGE: <input type="number"  placeholder="enter age:"><br>
+       PASSWORD: <input type="password" placeholder="enter password:"><br>
+       EMAIL: <input type="email" placeholder="enter email:"><br>
+        <button>SUBMIT</button>
+    </form>
+</body>
+</html>
